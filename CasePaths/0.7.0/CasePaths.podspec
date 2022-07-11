@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CasePaths"
-  spec.version      = "0.7.0"
+  spec.version      = "0.8.0"
   spec.summary      = "🧰 Case paths bring the power and ergonomics of key paths to enums!"
 
   # This description is used to generate tags and improve search results.

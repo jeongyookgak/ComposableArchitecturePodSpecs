@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ComposableArchitecture"
-  spec.version      = "0.25.0"
+  spec.version      = "0.38.2"
   spec.summary      = "A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind."
 
   # This description is used to generate tags and improve search results.

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IdentifiedCollections"
-  spec.version      = "0.1.1"
+  spec.version      = "0.3.2"
   spec.summary      = "A library of data structures for working with collections of identifiable elements in an ergonomic, performant way."
 
   # This description is used to generate tags and improve search results.
@@ -133,6 +133,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency "SwiftCollections", ">= 0.0.1", "< 1.0.0"
+  spec.dependency "SwiftCollections", ">= 0.0.1", "< 2.0.0"
   spec.dependency "SwiftCollectionsOrderedCollections", ">= 0.0.1", "< 1.0.0"
 end

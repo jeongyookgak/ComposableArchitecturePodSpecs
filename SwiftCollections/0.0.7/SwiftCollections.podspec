@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SwiftCollections"
-  spec.version      = "0.0.7"
+  spec.version      = "1.0.2"
   spec.summary      = "Commonly used data structures for Swift"
 
   # This description is used to generate tags and improve search results.
@@ -129,7 +129,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency "SwiftCollectionsDequeModule", "#{spec.version}"
-  spec.dependency "SwiftCollectionsOrderedCollections", "#{spec.version}"
+  spec.dependency "SwiftCollectionsDequeModule", ">= 0.0.1", "<= 2.0.0"
+  spec.dependency "SwiftCollectionsOrderedCollections", ">= 0.0.1", "<= 2.0.0"
 
 end

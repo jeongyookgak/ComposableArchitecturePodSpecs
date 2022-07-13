@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "XCTestDynamicOverlay"
-  spec.version      = "0.2.1"
+  spec.version      = "0.3.0"
   spec.summary      = "Define XCTest assertion helpers directly in your application and library code."
 
   # This description is used to generate tags and improve search results.

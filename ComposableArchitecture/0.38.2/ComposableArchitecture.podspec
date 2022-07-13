@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint combine-schedulers.podspec' to ensure this is a
+#  Be sure to run `pod spec lint swift-composable-architecture.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "CombineSchedulers"
-  spec.version      = "0.5.1"
-  spec.summary      = "⏰ A few schedulers that make working with Combine more testable and more versatile."
+  spec.name         = "ComposableArchitecture"
+  spec.version      = "0.38.2"
+  spec.summary      = "A library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,11 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  A few schedulers that make working with Combine more testable and more versatile.
+  The Composable Architecture (TCA, for short) is a library for building applications in a consistent and understandable way,
+  with composition, testing, and ergonomics in mind. It can be used in SwiftUI, UIKit, and more, and on any Apple platform (iOS, macOS, tvOS, and watchOS).
                    DESC
 
-  spec.homepage     = "https://www.pointfree.co"
+  spec.homepage     = "https://www.pointfree.co/collections/composable-architecture"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/pointfreeco/combine-schedulers.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/pointfreeco/swift-composable-architecture.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Sources/CombineSchedulers/**/*.swift"
+  spec.source_files  = "Sources/ComposableArchitecture/**/*.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -132,8 +133,10 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency "XCTestDynamicOverlay", ">= 0.1.2", "<1.0.0"
-  # spec.dependency "XCTestDynamicOverlay", "~> 0.1"
+  spec.dependency "CombineSchedulers", ">= 0.5.0", "<1.0.0"
+  spec.dependency "CasePaths", ">= 0.4.0", "<1.0.0"
+  spec.dependency "CustomDump", ">= 0.1.0", "<1.0.0"
+  spec.dependency "IdentifiedCollections", ">= 0.1.0", "<1.0.0"
+  spec.dependency "XCTestDynamicOverlay", ">= 0.2.0", "<1.0.0"
 
 end

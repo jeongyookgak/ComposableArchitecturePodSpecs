@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "IdentifiedCollections"
-  spec.version      = "0.1.1"
-  spec.summary      = "A library of data structures for working with collections of identifiable elements in an ergonomic, performant way."
+  spec.name         = "CombineSchedulers"
+  spec.version      = "0.6.0"
+  spec.summary      = "⏰ A few schedulers that make working with Combine more testable and more versatile."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  A library of data structures for working with collections of identifiable elements in an ergonomic, performant way.
+  A few schedulers that make working with Combine more testable and more versatile.
                    DESC
 
   spec.homepage     = "https://www.pointfree.co"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/pointfreeco/swift-identified-collections.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/pointfreeco/combine-schedulers.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Sources/IdentifiedCollections/**/*.swift"
+  spec.source_files  = "Sources/CombineSchedulers/**/*.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -133,6 +133,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency "SwiftCollections", ">= 0.0.1", "< 1.0.0"
-  spec.dependency "SwiftCollectionsOrderedCollections", ">= 0.0.1", "< 1.0.0"
+  spec.dependency "XCTestDynamicOverlay", ">= 0.1.2", "<1.0.0"
+  # spec.dependency "XCTestDynamicOverlay", "~> 0.1"
+
 end
